@@ -19,7 +19,7 @@ import {
 	SPOTIFY_CLIENT_SECRET,
 	SPOTIFY_REDIS_KEYS,
 } from '../server/constants';
-import type {LastFMGetTrack} from '../server/last-fm';
+import type {GetTopTracks} from '../server/last-fm';
 import {LastFM} from '../server/last-fm';
 import {rand} from '../util/types';
 
@@ -30,7 +30,7 @@ dayjs.extend(relativeTime);
 
 type Props = {
 	topTracks: TrackObjectFull[];
-	randomLastFMTrack: LastFMGetTrack;
+	randomLastFMTrack: GetTopTracks;
 };
 
 export default function AboutPage({topTracks, randomLastFMTrack}: Props) {
@@ -42,7 +42,7 @@ export default function AboutPage({topTracks, randomLastFMTrack}: Props) {
 
 			<div className="text-neutral-900/30 transition-all hover:text-neutral-900 dark:text-white/20 dark:hover:text-white/100 lg:-mx-8">
 				<Image
-					alt="A photo of me at my desk."
+					alt="Aesthetics wooahhh"
 					src={Banner}
 					width={1000}
 					height={400}
