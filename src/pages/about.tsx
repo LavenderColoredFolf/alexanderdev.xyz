@@ -19,7 +19,7 @@ import {
 	SPOTIFY_CLIENT_SECRET,
 	SPOTIFY_REDIS_KEYS,
 } from '../server/constants';
-import type {GetTopTracks} from '../server/last-fm';
+import type {LastFMGetTrack} from '../server/last-fm';
 import {LastFM} from '../server/last-fm';
 import {rand} from '../util/types';
 
@@ -30,7 +30,7 @@ dayjs.extend(relativeTime);
 
 type Props = {
 	topTracks: TrackObjectFull[];
-	randomLastFMTrack: GetTopTracks;
+	randomLastFMTrack: LastFMGetTrack;
 };
 
 export default function AboutPage({topTracks, randomLastFMTrack}: Props) {
