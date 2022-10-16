@@ -280,7 +280,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 	await redis.quit();
 
 	const lfm = new LastFM(LAST_FM_API_KEY);
-	const topLFMTracks = await lfm.getTopTracks('aabbccsmith', '12month');
+	const topLFMTracks = await lfm.getTopTracks('lavenderleaff', '12month');
 
 	return {
 		props: {
