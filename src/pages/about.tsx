@@ -54,8 +54,10 @@ export default function AboutPage({topTracks, randomLastFMTrack}: Props) {
 
 			<div className="space-y-8">
 				<p>
-				Hey there, I'm a developer from Canada. I'm into simulation games like Euro Truck Sim 2, and X-Plane 12. I happen to be a huge fan of React and Next and tell anyone who 
-					doesn't like it that their opinion is wrong haha. I contribute to many communities such as{' '}
+					Hey there, I'm a developer from Canada. I'm into simulation games like
+					Euro Truck Sim 2, and X-Plane 12. I happen to be a huge fan of React
+					and Next and tell anyone who doesn't like it that their opinion is
+					wrong haha. I contribute to many communities such as{' '}
 					<a
 						href="https://movezenlogistiek.co.uk"
 						rel="noreferrer"
@@ -63,15 +65,17 @@ export default function AboutPage({topTracks, randomLastFMTrack}: Props) {
 					>
 						Movezen Logistiek
 					</a>
-					{/**/}. I've been programming since I was 10 years old, and dropped it for about 3-4 years before
-					picking it back up in High School. I absolutely love music and as you'll see below I have quite
-					a music selection!
+					{/**/}. I've been programming since I was 10 years old, and dropped it
+					for about 3-4 years before picking it back up in High School. I
+					absolutely love music and as you'll see below I have quite a music
+					selection!
 				</p>
 
 				<h2 className="text-3xl font-bold">Music</h2>
 
 				<p>
-					I've listened to a lot of music over the years, there's just so many options! In the past 12 months, I've played the song{' '}
+					I've listened to a lot of music over the years, there's just so many
+					options! In the past 12 months, I've played the song{' '}
 					<span className="font-bold">{randomLastFMTrack.name}</span> by{' '}
 					<span className="font-bold">{randomLastFMTrack.artist.name}</span>{' '}
 					exactly{' '}

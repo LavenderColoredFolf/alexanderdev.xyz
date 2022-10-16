@@ -21,7 +21,9 @@ export default function Talk() {
 
 	return (
 		<div className="space-y-4">
-			<h1 className="text-2xl font-bold sm:text-3xl">Need to get in touch? 💬</h1>
+			<h1 className="text-2xl font-bold sm:text-3xl">
+				Need to get in touch? 💬
+			</h1>
 			<p>
 				Leave a message on the form below or get in touch through Discord,
 				Twitter or email.
@@ -61,7 +63,7 @@ export default function Talk() {
 							<span className="select-none text-sm font-bold uppercase tracking-wide text-opacity-50 dark:text-white">
 								Email Address
 							</span>
-							
+
 							<input
 								required
 								type="email"
