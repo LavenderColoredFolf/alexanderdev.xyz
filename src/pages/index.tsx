@@ -130,7 +130,7 @@ export default function Index(props: Props) {
 
 				<p className="opacity-80">
 					I'm a <span suppressHydrationWarning>~{age.toPrecision(7)}</span> year
-					old devloper from Canada. I'm interested in React/TypeScript development projects.
+					old developer from Canada. I'm interested in React/TypeScript development projects.
 				</p>
 			</div>
 
