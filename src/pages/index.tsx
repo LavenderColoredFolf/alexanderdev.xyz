@@ -178,6 +178,9 @@ export default function Index(props: Props) {
 					<ListItem icon={SiStyledComponents} text="styled-components" />
 					<ListItem icon={SiMongodb} text="Mongo" />
 				</ul>
+				<p className="opacity-40 text-sm pt-5">
+			<em>Throw in some extra stuff I'm not so good at :/</em>
+		</p>
 			</div>
 		</>
 	);
