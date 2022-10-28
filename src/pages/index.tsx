@@ -130,19 +130,21 @@ export default function Index(props: Props) {
 
 				<p className="opacity-80">
 					I'm a <span suppressHydrationWarning>~{age.toPrecision(7)}</span> year
-					old developer from Canada. I'm interested in React/TypeScript development projects.
+					old developer from Canada. I'm interested in React/TypeScript
+					development projects.
 				</p>
 			</div>
 
 			<div className="space-y-4">
 				<h1 className="text-2xl font-bold sm:text-3xl">What do I do? 💭</h1>
 				<p className="opacity-80">
-					I don't do much, however, where I am currently, it is quite a bit such as{' '}
+					I don't do much, however, where I am currently, it is quite a bit such
+					as{' '}
 					<a href="https://vatsim.net" target="_blank" rel="noreferrer">
 						VATSIM
 					</a>{' '}
-					- we're working on a secret project, stay tuned! Below are some of
-					the open source projects I've worked on.
+					- we're working on a secret project, stay tuned! Below are some of the
+					open source projects I've worked on.
 				</p>
 
 				<div className="grid auto-cols-max grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-3">
@@ -156,9 +158,10 @@ export default function Index(props: Props) {
 				<h1 className="text-2xl font-bold sm:text-3xl">Technologies 💻</h1>
 
 				<p className="opacity-80">
-					I use a variety of tools to take on certain projects in the most efficent way possible.
-					I absolutely love using React and utilize it for most of my projects, it hasn't failed me
-					in the past. Below you'll find some other stuff I use.
+					I use a variety of tools to take on certain projects in the most
+					efficent way possible. I absolutely love using React and utilize it
+					for most of my projects, it hasn't failed me in the past. Below you'll
+					find some other stuff I use.
 				</p>
 
 				<ul className="grid grid-cols-3 gap-4 sm:grid-cols-4">
@@ -179,8 +182,8 @@ export default function Index(props: Props) {
 					<ListItem icon={SiMongodb} text="Mongo" />
 				</ul>
 				<p className="opacity-40 text-sm pt-5">
-			<em>Throw in some extra stuff I'm not so good at :/</em>
-		</p>
+					<em>Throw in some extra stuff I'm not so good at :/</em>
+				</p>
 			</div>
 		</>
 	);
