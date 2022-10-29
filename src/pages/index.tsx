@@ -43,7 +43,6 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 dayjs.extend(relativeTime);
 
 type Props = {
-	pinnedRepos: PinnedRepo[];
 	lanyard: LanyardData;
 };
 
