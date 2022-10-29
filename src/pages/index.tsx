@@ -47,7 +47,7 @@ type Props = {
 };
 
 export default function Index(props: Props) {
-	const {data: projects = props.pinnedRepos} = useGitHubPinnedRepos('alii');
+	
 
 	const {data: lanyard} = useLanyard(DISCORD_ID, {
 		initialData: props.lanyard,
