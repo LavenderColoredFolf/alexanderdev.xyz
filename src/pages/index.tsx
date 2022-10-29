@@ -47,8 +47,6 @@ type Props = {
 };
 
 export default function Index(props: Props) {
-	
-
 	const {data: lanyard} = useLanyard(DISCORD_ID, {
 		initialData: props.lanyard,
 	});
@@ -145,9 +143,10 @@ export default function Index(props: Props) {
 					- we're working on a secret project, stay tuned! There is also{' '}
 					<a href="https://HarmonyRad.io" target="_blank" rel="noreferrer">
 						Harmony Radio
-					</a>{' '} - a hit music station you should listen to! On a normal day,
-					there would be a pinned GitHub Repos section, however the website where the data
-					is pulled from is down, so no repos sadly :/
+					</a>{' '}
+					- a hit music station you should listen to! On a normal day, there
+					would be a pinned GitHub Repos section, however the website where the
+					data is pulled from is down, so no repos sadly :/
 				</p>
 
 				{/* <div className="grid auto-cols-max grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-3">
@@ -298,8 +297,6 @@ function ProjectCard({repo: project}: {repo: PinnedRepo}) {
 }
 
 export const getStaticProps: GetStaticProps<Props> = async function () {
-	
-
 	const request = new Request(
 		`https://api.lanyard.rest/v1/users/${DISCORD_ID}`,
 	);
