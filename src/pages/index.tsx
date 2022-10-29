@@ -146,7 +146,7 @@ export default function Index(props: Props) {
 					</a>{' '}
 					- a hit music station you should listen to! On a normal day, there
 					would be a pinned GitHub Repos section, however the website where the
-					data is pulled from is down, so no repos sadly :/
+					data is pulled from is down, so no repos sadly, screw you OpenSSL :/
 				</p>
 
 				{/* <div className="grid auto-cols-max grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-3">
