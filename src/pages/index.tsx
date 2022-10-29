@@ -143,15 +143,19 @@ export default function Index(props: Props) {
 					<a href="https://vatsim.net" target="_blank" rel="noreferrer">
 						VATSIM
 					</a>{' '}
-					- we're working on a secret project, stay tuned! Below are some of the
-					open source projects I've worked on.
+					- we're working on a secret project, stay tuned! There is also{' '}
+					<a href="https://HarmonyRad.io" target="_blank" rel="noreferrer">
+						Harmony Radio
+					</a>{' '} - a hit music station you should listen to! On a normal day,
+					there would be a pinned GitHub Repos section, however the website where the data
+					is pulled from is down, so no repos sadly :/
 				</p>
 
-				<div className="grid auto-cols-max grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-3">
+				{/* <div className="grid auto-cols-max grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-3">
 					{projects.map(project => (
 						<ProjectCard key={project.repo} repo={project} />
 					))}
-				</div>
+				</div> */}
 			</div>
 
 			<div className="space-y-4">
@@ -295,9 +299,9 @@ function ProjectCard({repo: project}: {repo: PinnedRepo}) {
 }
 
 export const getStaticProps: GetStaticProps<Props> = async function () {
-	const pinnedRepos = await fetch(
-		'https://gh-pinned-repos.egoist.sh/?username=lavendercoloredfolf',
-	).then(async response => response.json() as Promise<PinnedRepo[]>);
+	// const pinnedRepos = await fetch(
+	// 	'https://gh-pinned-repos.egoist.sh/?username=lavendercoloredfolf',
+	// ).then(async response => response.json() as Promise<PinnedRepo[]>);
 
 	const request = new Request(
 		`https://api.lanyard.rest/v1/users/${DISCORD_ID}`,
@@ -312,7 +316,7 @@ export const getStaticProps: GetStaticProps<Props> = async function () {
 	}
 
 	return {
-		props: {pinnedRepos, lanyard: body.data},
+		props: {lanyard: body.data},
 		revalidate: 120,
 	};
 };
