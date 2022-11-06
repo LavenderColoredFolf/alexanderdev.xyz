@@ -28,11 +28,13 @@ export default function Talk() {
 				Leave a message on the form below or get in touch through Discord,
 				Twitter or email.
 			</p>
-			<p>
-				If you fill out the contact form below, you are consenting to having
-				your IP logged to prevent spammers. If you have previously filled it
-				out, and want it removed, feel free to email me so that I can wipe it
-				from my database.
+			<p className="opacity-40 text-sm pt-5">
+				<em>
+					If you fill out the contact form below, you are consenting to having
+					your IP logged to prevent spammers. If you have previously filled it
+					out, and want it removed, feel free to email me so that I can wipe it
+					from my database.
+				</em>
 			</p>
 
 			<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
