@@ -93,13 +93,13 @@ export default function App({
 	const navLinks = (
 		<>
 			<NavLink href="/" closeMenu={closeMenu}>
-				/
+				~/
 			</NavLink>
 			<NavLink href="/about" closeMenu={closeMenu}>
-				/about
+				~/about
 			</NavLink>
 			<NavLink href="/contact" closeMenu={closeMenu}>
-				/contact
+				~/contact
 			</NavLink>
 		</>
 	);

@@ -4,7 +4,7 @@ import {api} from '../../server/api';
 export default api({
 	async GET() {
 		return {
-			ping: 'pong',
+			ping: 'ponging the ping',
 			time: Date.now(),
 			id: id(),
 		};
